@@ -191,5 +191,14 @@ h3 {
 
 /* Contacto */
 .formulario {
-    
+    background-color: var(--gris);
+    width: min(60rem,100%);
+    height: 40vh;
+    align-content: center;
+    margin: 0 auto;
+    border-radius: .5rem;
+}
+
+.formulario fieldset {
+    border: none;
 }
