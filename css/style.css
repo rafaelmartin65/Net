@@ -7,14 +7,24 @@
     --grisClaro: #DFE9F3;
 }
 
+/* Globales */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: mandatory;
 }
 
+/* Scroll Snap */
+.servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+
 body {
-    font-size: 16px;
-    /* 1rem=10px */
+    font-size: 16px;     /* 1rem=10px */
     font-family: 'Krub', sans-serif;
     background-image: linear-gradient(to top, var(--grisClaro)0%, var(--blanco)100%);
 }
@@ -100,6 +110,7 @@ h3 {
     display: flex;
     justify-content: flex-end;
 }
+
 
 /* Navegación Principal */
 .nav-bg {
@@ -225,7 +236,7 @@ h3 {
     text-transform: uppercase;
     font-weight: 700;
     color: var(--primario);
-    
+    padding-top: 1rem;
 }
 
 .contenedor-campos {
@@ -259,4 +270,10 @@ h3 {
     height: 3rem;
     border: none;
     border-radius: .5rem;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
 }
